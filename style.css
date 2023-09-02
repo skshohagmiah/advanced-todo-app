@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 105, 0.9724264705882353) 35%,
+    rgba(9, 21, 129, 1) 39%,
+    rgba(8, 37, 140, 1) 44%,
+    rgba(8, 43, 144, 1) 46%,
+    rgba(7, 71, 163, 1) 55%,
+    rgba(61, 55, 175, 1) 62%,
+    rgba(131, 35, 191, 1) 71%,
+    rgba(201, 15, 207, 1) 80%,
+    rgba(255, 0, 219, 1) 87%
+  );
+  height: 100vh;
+}
+
+.container {
+  width: 30vw;
+  min-height: 90%;
+  background-color: white;
+  margin: 2rem;
+  border-radius: 0.2rem 1rem;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.input-text {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+input {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem 1rem;
+  background: rgb(231, 224, 224);
+  color: black;
+  font-size: 1.1rem;
+}
+
+input[type="submit"] {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 105, 0.9724264705882353) 35%,
+    rgba(9, 21, 129, 1) 39%,
+    rgba(8, 37, 140, 1) 44%,
+    rgba(8, 43, 144, 1) 46%,
+    rgba(7, 71, 163, 1) 55%,
+    rgba(61, 55, 175, 1) 62%,
+    rgba(131, 35, 191, 1) 71%,
+    rgba(201, 15, 207, 1) 80%,
+    rgba(255, 0, 219, 1) 87%
+  );
+  color: white;
+}
+
+ul li {
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 2rem;
+  background: rgb(231, 224, 224);
+  padding: 0.3rem 1rem;
+  border-radius: 0.2rem 1rem;
+  margin-top: 1rem;
+}
+.li-text {
+  flex: 1;
+}
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: rgb(194, 47, 169);
+}
+.check {
+  text-decoration: line-through;
+}
+.modal {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  gap: 1rem;
+}
